@@ -105,6 +105,10 @@ body {
   text-align: justify;
 }
 
+.sidebar__item__about__p {
+  margin-bottom: 0.5em;
+}
+
 .header__container {
   position: absolute;
   top: 0px;
