@@ -35,8 +35,6 @@ body {
   width: 30%;
 }
 
-
-
 .main__item__header__position {
   width: 40%;
 }
@@ -85,8 +83,12 @@ body {
   box-shadow: 0 0 0.15cm rgba(0, 0, 0, 0.5);
 }
 
+.sidebar__link__item {
+  text-decoration: none;
+}
+
 .sidebar__item {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .main__item {
@@ -130,8 +132,12 @@ img {
 }
 
 .header__name__title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-style: italic;
+}
+
+.header__name__title__item {
+  padding-right: 1rem;
 }
 
 .header__name__actual {
