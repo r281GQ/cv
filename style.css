@@ -22,6 +22,11 @@ body {
   box-shadow: 0 4px 0.25cm -2px rgba(0, 0, 0, 0.5);
 }
 
+.header__position {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 .container {
   padding: 10px;
   display: flex;
@@ -73,14 +78,61 @@ body {
 
 .sidebar {
   align-items: stretch;
-  background-color: #bdbdbd;
+  background-color: rgba(149, 165, 166, 1);
   height: 100%;
-  width: 40%;
+  width: 45%;
   padding: 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 0.15cm rgba(0, 0, 0, 0.5);
+}
+
+.or-spacer {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  position: relative;
+}
+
+.or-spacer .mask {
+  overflow: hidden;
+  height: 20px;
+}
+
+.or-spacer .mask:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px / 12px;
+  box-shadow: 0 0 8px black;
+}
+
+.or-spacer span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -25px;
+  left: 50%;
+  margin-left: -25px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #999;
+  background: white;
+}
+.or-spacer span i {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-style: normal;
+  color: #999;
 }
 
 .sidebar__link__item {
@@ -128,7 +180,8 @@ body {
 img {
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
   max-width: 100%;
-  filter: grayscale(100%);
+  border-radius: 100%;
+  /*filter: grayscale(100%);*/
 }
 
 .header__name__title {
@@ -155,7 +208,9 @@ img {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #757575;
+  color: white;
+  background-color: rgba(52, 73, 94, 1);
+  /*background-color: #757575;*/
   font-size: 2.5em;
 }
 
@@ -168,32 +223,32 @@ page {
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 }
 
-page[size="A4"] {
+page[size='A4'] {
   width: 21cm;
   height: 29.7cm;
 }
 
-page[size="A4"][layout="portrait"] {
+page[size='A4'][layout='portrait'] {
   width: 29.7cm;
   height: 21cm;
 }
 
-page[size="A3"] {
+page[size='A3'] {
   width: 29.7cm;
   height: 42cm;
 }
 
-page[size="A3"][layout="portrait"] {
+page[size='A3'][layout='portrait'] {
   width: 42cm;
   height: 29.7cm;
 }
 
-page[size="A5"] {
+page[size='A5'] {
   width: 14.8cm;
   height: 21cm;
 }
 
-page[size="A5"][layout="portrait"] {
+page[size='A5'][layout='portrait'] {
   width: 21cm;
   height: 14.8cm;
 }
